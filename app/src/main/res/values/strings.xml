@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MathQuiz</string>
+    <string name="name">Your name is&#8230;</string>
+    <string name="email">Enter your email address here</string>
+    <string name="note1">Note: There is only one correct answer.</string>
+    <string name="note2">Note: There are 2 correct answers. </string>
+    <string name="start_button">Start</string>
+    <string name="next_button">Next</string>
+    <string name="previous_button">Previous</string>
+    <string name="submit_button">Submit</string>
+    <string name="results_button">Get Results</string>
+    <string name="title">Simple MATHs makes world a better place.\n Test your abilities with this awesome quiz! </string>
+    <string name="warning_name">Enter your name first!</string>
+    <string name="error_no_answer">Choose an answer!</string>
+    <string name="error2_no_answer">Write your answer!</string>
+    <string name="question1">Question 1: What is the approach of  1/∞ ?</string>
+    <string name="question1_answer1">0</string>
+    <string name="question1_answer2">∞</string>
+    <string name="question1_answer3">It cannot be defined.</string>
+    <string name="question2">Question 2: What is the formula for (a+b)^2 ?</string>
+    <string name="question2_answer1">a^2+b^2</string>
+    <string name="question2_answer2">a^2+a*b+b^2</string>
+    <string name="question2_answer3">a^2+b^2+2*a*b</string>
+    <string name="question3">Question 3: If n tends to infinity and k is a real number, than what is the limit of (n^k+2)/(n^2+k) ?</string>
+    <string name="question3_answer1">0</string>
+    <string name="question3_answer2">If k=2, the limit is 1.</string>
+    <string name="question3_answer3">If k > 2 the limit is ∞, if k &lt; 2 the limit is 0.</string>
+    <string name="question3_answer4">If k &lt; 2 the limit is ∞, if k > 2 the limit is 0.</string>
+    <string name="question4">Question 4: What is the value of sin(3π/2) ?</string>
+    <string name="question4_answer">-1</string>
+    <string name="question5">Question 5: What is the greatest value of a function f, where f:R→R and f(x)=-x^2+2*x-1 ?</string>
+    <string name="question5_answer">0</string>
+    <string name="type_answer">Type your answer here&#8230;</string>
+    <string name="recap">Let\'s recap your answers</string>
+    <string name="correct">Correct!</string>
+    <string name="wrong">Wrong</string>
+</resources>
