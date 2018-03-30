@@ -16,10 +16,10 @@ public class Question5Activity extends AppCompatActivity {
         setContentView(R.layout.activity_question5);
     }
     public void from5ToQuestion4(View view){
-        Intent intent = new Intent(this, Question3Activity.class);
+        Intent intent = new Intent(this, Question4Activity.class);
         startActivity(intent);}
     public void from5tToQuestionFinal(View view){
-        EditText answerEditText = (EditText)findViewById(R.id.answer_field);
+        EditText answerEditText = findViewById(R.id.answer_field);
         String answer=answerEditText.getText().toString();
         if(answer.matches(""))
         { String text=getResources().getText(R.string.error2_no_answer).toString();

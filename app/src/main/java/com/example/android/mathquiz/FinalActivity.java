@@ -22,7 +22,7 @@ public class FinalActivity extends AppCompatActivity {
         RadioButton answer1RadioButton = findViewById(R.id.radio_button1);
         RadioButton answer2RadioButton = findViewById(R.id.radio_button2);
         RadioButton answer3RadioButton = findViewById(R.id.radio_button3);
-        TextView textView1 = (TextView) findViewById(R.id.text_view1);
+        TextView textView1 = findViewById(R.id.text_view1);
         if (AndroidApp.answer == R.id.radio_button1) {
             answer1RadioButton.setChecked(true);
             AndroidApp.correct++;
@@ -130,21 +130,27 @@ public class FinalActivity extends AppCompatActivity {
             textView4.setTextColor(getColor(R.color.red));
         }
     }
-    public void getResults (View view)
-    {Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setData(Uri.parse("mailto:"));
-        intent.putExtra(Intent.EXTRA_SUBJECT, "MathQuizResults for"+AndroidApp.name);
-        //intent.putExtra(Intent.EXTRA_TEXT,message);
-        if (intent.resolveActivity(getPackageManager()) != null) {
-            startActivity(intent);
-        }
 
-
-
-
-
-
-
-
+    public void getResults(View view) {
+        TextView finalResult= findViewById(R.id.final_result);
+        String result=getString(AndroidApp.correct);
+        result=result+"/5";
+        finalResult.setText(result);
+    }
+    /**Intent intent = new Intent(Intent.ACTION_SENDTO);
+     intent.setData(Uri.parse("mailto:"));
+     intent.putExtra(Intent.EXTRA_SUBJECT, "MathQuizResults for"+AndroidApp.name);
+     intent.putExtra(Intent.EXTRA_TEXT,message);
+     if (intent.resolveActivity(getPackageManager()) != null) {
+     startActivity(intent);
+     }**/
 }
-}
+
+
+
+
+
+
+
+
+

@@ -21,7 +21,7 @@
     <string name="question2_answer1">a^2+b^2</string>
     <string name="question2_answer2">a^2+a*b+b^2</string>
     <string name="question2_answer3">a^2+b^2+2*a*b</string>
-    <string name="question3">Question 3: If n tends to infinity and k is a real number, than what is the limit of (n^k+2)/(n^2+k) ?</string>
+    <string name="question3">Question 3: If n tends to infinite and k is a real number, than what is the limit of (n^k+2)/(n^2+k) ?</string>
     <string name="question3_answer1">0</string>
     <string name="question3_answer2">If k=2, the limit is 1.</string>
     <string name="question3_answer3">If k > 2 the limit is ∞, if k &lt; 2 the limit is 0.</string>

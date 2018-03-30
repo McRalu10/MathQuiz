@@ -15,10 +15,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="@string/recap"
-    android:textColor="@color/colorAccent"
-    android:textStyle="bold|italic"
+    android:textAlignment="center"
     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-    android:textAlignment="center"/>
+    android:textColor="@color/colorAccent"
+    android:textStyle="bold|italic"/>
     <TextView
         style="@style/question"
         android:layout_width="wrap_content"
@@ -35,32 +35,32 @@
             android:orientation="vertical">
             <RadioButton
                 android:id="@+id/radio_button1"
+                style="@style/answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/question1_answer1"
-                style="@style/answer"/>
+                android:text="@string/question1_answer1"/>
             <RadioButton
                 android:id="@+id/radio_button2"
+                style="@style/answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/question1_answer2"
-                style="@style/answer"/>
+                android:text="@string/question1_answer2"/>
             <RadioButton
                 android:id="@+id/radio_button3"
+                style="@style/answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/question1_answer3"
-                style="@style/answer"/>
+                android:text="@string/question1_answer3"/>
         </RadioGroup>
         <TextView
             android:id="@+id/text_view1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     <TextView
+        style="@style/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/question2"
-        style="@style/question"/>
+        android:text="@string/question2"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -71,102 +71,107 @@
         android:orientation="vertical">
         <RadioButton
             android:id="@+id/radio_button4"
+            style="@style/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question2_answer1"
-            style="@style/answer"/>
+            android:text="@string/question2_answer1"/>
         <RadioButton
             android:id="@+id/radio_button5"
+            style="@style/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question2_answer2"
-            style="@style/answer"/>
+            android:text="@string/question2_answer2"/>
         <RadioButton
             android:id="@+id/radio_button6"
+            style="@style/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question2_answer3"
-            style="@style/answer"/>
+            android:text="@string/question2_answer3"/>
     </RadioGroup>
         <TextView
             android:id="@+id/text_view2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
+            style="@style/question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question3"
-            style="@style/question"/>
+            android:text="@string/question3"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/note2"/>
         <CheckBox
             android:id="@+id/check_box1"
+            style="@style/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question3_answer1"
-            style="@style/answer"/>
+            android:text="@string/question3_answer1"/>
         <CheckBox
             android:id="@+id/check_box2"
+            style="@style/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question3_answer2"
-            style="@style/answer"/>
+            android:text="@string/question3_answer2"/>
         <CheckBox
             android:id="@+id/check_box3"
+            style="@style/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question3_answer3"
-            style="@style/answer"/>
+            android:text="@string/question3_answer3"/>
         <CheckBox
             android:id="@+id/check_box4"
+            style="@style/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question3_answer3"
-            style="@style/answer"/>
+            android:text="@string/question3_answer3"/>
         <TextView
             android:id="@+id/text_view3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
+            style="@style/question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question4"
-            style="@style/question"/>
+            android:text="@string/question4"/>
         <EditText
             android:id="@+id/answer4_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
             android:hint="@string/type_answer"
-            android:inputType="number"
-            android:layout_margin="@dimen/standard_margin"/>
+            android:inputType="number"/>
         <TextView
             android:id="@+id/text_view4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
+            style="@style/question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question5"
-            style="@style/question"/>
+            android:text="@string/question5"/>
         <EditText
             android:id="@+id/answer5_field"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/standard_margin"
             android:hint="@string/type_answer"
-            android:inputType="number"
-            android:layout_margin="@dimen/standard_margin"/>
+            android:inputType="number"/>
         <TextView
             android:id="@+id/text_view5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/final_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/results_button"
             android:layout_gravity="center"
-            android:onClick="getResults"/>
+            android:onClick="getResults"
+            android:text="@string/results_button"/>
     </LinearLayout>
 </ScrollView>
 
