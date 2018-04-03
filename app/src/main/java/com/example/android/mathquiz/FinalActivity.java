@@ -120,11 +120,11 @@ public class FinalActivity extends AppCompatActivity {
         }
         EditText editText2 = findViewById(R.id.answer5_field);
         TextView textView5 = findViewById(R.id.text_view5);
-        editText1.setClickable(false);
+        editText2.setClickable(false);
         if (AndroidApp.answer5.matches("0")) {
             AndroidApp.correct++;
-            textView4.setText(R.string.correct);
-            textView4.setTextColor(getColor(R.color.green));
+            textView5.setText(R.string.correct);
+            textView5.setTextColor(getColor(R.color.green));
         } else {
             textView4.setText(R.string.wrong);
             textView4.setTextColor(getColor(R.color.red));

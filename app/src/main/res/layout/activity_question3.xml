@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_green"
-    tools:context="com.example.android.mathquiz.Question1Activity">
+    tools:context="com.example.android.mathquiz.Question3Activity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,41 +14,41 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/background"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        android:src="@drawable/background"/>
     <TextView
+        style="@style/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/question3"
-        style="@style/question"/>
+        android:text="@string/question3"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/note2"/>
         <CheckBox
             android:id="@+id/check_box1"
+            style="@style/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question3_answer1"
-            style="@style/answer"/>
+            android:text="@string/question3_answer1"/>
         <CheckBox
             android:id="@+id/check_box2"
+            style="@style/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question3_answer2"
-            style="@style/answer"/>
+            android:text="@string/question3_answer2"/>
         <CheckBox
             android:id="@+id/check_box3"
+            style="@style/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question3_answer3"
-            style="@style/answer"/>
+            android:text="@string/question3_answer3"/>
     <CheckBox
         android:id="@+id/check_box4"
+    style="@style/answer"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/question3_answer3"
-    style="@style/answer"/>
+    android:text="@string/question3_answer3"/>
 
 
     <RelativeLayout
@@ -64,9 +64,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/standard_margin"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/standard_margin"
             android:onClick="from3tToQuestion4"
             android:text="@string/next_button" />
     </RelativeLayout>
