@@ -1,8 +1,5 @@
 package com.example.android.mathquiz;
 
-import android.content.Intent;
-import android.graphics.Color;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,10 +7,12 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
-import org.w3c.dom.Text;
 
 public class FinalActivity extends AppCompatActivity {
+
+    int correct=AndroidApp.correct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,7 +109,7 @@ public class FinalActivity extends AppCompatActivity {
         EditText editText1 = findViewById(R.id.answer4_field);
         TextView textView4 = findViewById(R.id.text_view4);
         editText1.setClickable(false);
-        if (AndroidApp.answer4.matches("-1")) {
+        if (AndroidApp.answer4.matches("1")) {
             AndroidApp.correct++;
             textView4.setText(R.string.correct);
             textView4.setTextColor(getColor(R.color.green));
@@ -126,25 +125,19 @@ public class FinalActivity extends AppCompatActivity {
             textView5.setText(R.string.correct);
             textView5.setTextColor(getColor(R.color.green));
         } else {
-            textView4.setText(R.string.wrong);
-            textView4.setTextColor(getColor(R.color.red));
+            textView5.setText(R.string.wrong);
+            textView5.setTextColor(getColor(R.color.red));
         }
     }
 
     public void getResults(View view) {
-        TextView finalResult= findViewById(R.id.final_result);
-        String result=getString(AndroidApp.correct);
-        result=result+"/5";
-        finalResult.setText(result);
+        String result=getString(correct);
+        result="You got"+result+"/5";
+        Toast.makeText(this,result,Toast.LENGTH_LONG).show();
     }
-    /**Intent intent = new Intent(Intent.ACTION_SENDTO);
-     intent.setData(Uri.parse("mailto:"));
-     intent.putExtra(Intent.EXTRA_SUBJECT, "MathQuizResults for"+AndroidApp.name);
-     intent.putExtra(Intent.EXTRA_TEXT,message);
-     if (intent.resolveActivity(getPackageManager()) != null) {
-     startActivity(intent);
-     }**/
 }
+
+
 
 
 

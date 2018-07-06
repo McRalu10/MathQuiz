@@ -1,6 +1,5 @@
 package com.example.android.mathquiz;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +20,7 @@ public class Question5Activity extends AppCompatActivity {
     public void from5tToQuestionFinal(View view){
         EditText answerEditText = findViewById(R.id.answer_field);
         String answer=answerEditText.getText().toString();
+        AndroidApp.answer5=answer;
         if(answer.matches(""))
         { String text=getResources().getText(R.string.error2_no_answer).toString();
             Toast.makeText(this,text,Toast.LENGTH_LONG).show();

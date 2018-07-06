@@ -26,8 +26,8 @@
     <string name="question3_answer2">If k=2, the limit is 1.</string>
     <string name="question3_answer3">If k > 2 the limit is ∞, if k &lt; 2 the limit is 0.</string>
     <string name="question3_answer4">If k &lt; 2 the limit is ∞, if k > 2 the limit is 0.</string>
-    <string name="question4">Question 4: What is the value of sin(3π/2) ?</string>
-    <string name="question4_answer">-1</string>
+    <string name="question4">Question 4: What is the value of sin(π/2) ?</string>
+    <string name="question4_answer">1</string>
     <string name="question5">Question 5: What is the greatest value of a function f, where f:R→R and f(x)=-x^2+2*x-1 ?</string>
     <string name="question5_answer">0</string>
     <string name="type_answer">Type your answer here&#8230;</string>

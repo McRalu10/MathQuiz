@@ -48,7 +48,7 @@
     style="@style/answer"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="@string/question3_answer3"/>
+    android:text="@string/question3_answer4"/>
 
 
     <RelativeLayout
